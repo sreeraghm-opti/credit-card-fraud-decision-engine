@@ -32,7 +32,9 @@ Investigator Queue
      ↓
 SHAP Reason Codes
      ↓
-PSI Monitoring### 5. SMOTE Comparison
+PSI Monitoring
+
+### 5. SMOTE Comparison
 
 SMOTE was evaluated as an alternative to class weighting.
 
@@ -52,6 +54,8 @@ Fraud probability is converted into an operational decision.
 ```text
 P(Fraud) >= 0.56 → REVIEW
 P(Fraud) <  0.56 → APPROVE
+```
+
 ## Final Out-of-Time Test Results
 
 | Metric | Result |
@@ -74,17 +78,46 @@ The test set was not used for model or threshold selection.
 
 ## Monitoring Results
 
+Population Stability Index (PSI) was used to monitor changes in feature distributions and model-score distributions between the training period and later chronological periods.
+
 ### Model Score Stability
 
-```text
-Train → Validation PSI = 0.0383
-Status = Stable
+| Comparison | PSI | Status |
+|---|---:|---|
+| Train → Validation | 0.0383 | Stable |
+| Train → Test | 0.0865 | Stable |
 
-Train → Test PSI = 0.0865
-Status = Stable
+The model-score distribution remained stable despite several individual features exhibiting distributional shifts.
+
+### Feature-Level Drift
+
+The monitoring pipeline identified:
+
+- **6 features with significant drift**
+- **9 features with moderate drift**
+- **15 features classified as stable**
+
+The largest observed shift was in the `Time` feature, which is expected given the chronological nature of the train/validation/test split.
+
+Because the dataset covers a relatively short historical period, this analysis should be interpreted as **out-of-time stability analysis rather than long-term production drift monitoring**.
+
+---
+
 ## Technologies
 
-Python, pandas, NumPy, scikit-learn, XGBoost, imbalanced-learn, SHAP, SciPy, matplotlib, seaborn and Jupyter.
+- Python
+- pandas
+- NumPy
+- scikit-learn
+- XGBoost
+- imbalanced-learn
+- SHAP
+- SciPy
+- matplotlib
+- seaborn
+- Jupyter
+
+---
 
 ## Author
 
@@ -93,11 +126,8 @@ Python, pandas, NumPy, scikit-learn, XGBoost, imbalanced-learn, SHAP, SciPy, mat
 M.A. Environmental Economics  
 Madras School of Economics
 
-Interests:
+**Interests**
 
-- Quantitative Finance
-- Risk Analytics
-- Optimization
-- Machine Learning
-- Financial Economics
-- Climate and Environmental Economics
+Quantitative Finance · Risk Analytics · Optimization · Machine Learning · Financial Economics · Climate & Environmental Economics
+
+Quantitative Finance · Risk Analytics · Optimization · Machine Learning · Financial Economics · Climate & Environmental Economics
