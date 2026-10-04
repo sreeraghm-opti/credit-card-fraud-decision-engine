@@ -16,7 +16,54 @@ It needs:
 
 This project develops a fraud decision engine that moves from transaction-level prediction to operational decisioning.
 
-## System Architecture
+## Key Results
+
+### Out-of-Time Test Performance
+
+| Metric | Final Result |
+|---|---:|
+| Test PR-AUC | **0.7684** |
+| Test ROC-AUC | **0.9797** |
+| Precision | **86.67%** |
+| Recall | **75.00%** |
+| F1 Score | **80.41%** |
+| Review Alerts | **45** |
+| True Positives | **39** |
+| False Positives | **6** |
+| False Negatives | **13** |
+
+### Frozen Decision Policy
+
+```text
+Model:                 Class-Weighted XGBoost
+Frozen Threshold:      0.56
+Investigator Capacity: 50 alerts
+
+P(Fraud) >= 0.56  ->  REVIEW
+P(Fraud) <  0.56  ->  APPROVE
+
+39 fraud cases detected
+6 false alerts
+13 missed fraud cases
+45 total investigations
+```
+
+### Model Selection
+
+| Model | Validation PR-AUC | Test PR-AUC |
+|---|---:|---:|
+| Class-Weighted XGBoost | **0.8618** | **0.7684** |
+| SMOTE XGBoost | 0.8475 | **0.7756** |
+
+The final model was selected using **validation PR-AUC**. The decision threshold was selected on the validation set subject to an investigator capacity constraint. The test set was kept untouched until final evaluation.
+
+### Key Visuals
+
+- [Final Confusion Matrix](reports/phase9_final_confusion_matrix.png)
+- [SMOTE vs Class-Weighted Precision/Recall](reports/smote_vs_weighted_precision_recall.png)
+- [SMOTE vs Class-Weighted PR-AUC](reports/smote_vs_weighted_pr_auc.png)
+
+\n## System Architecture
 
 ![Credit Card Fraud Decision Engine Architecture](reports/figures/fraud_decision_engine_architecture.svg)
 
