@@ -1,4 +1,3 @@
-cat >> README.md <<'EOF'
 # Credit Card Fraud Decision Engine
 
 A banking-oriented fraud detection and decisioning system designed around extreme class imbalance, temporal validation, cost-sensitive decisioning, investigator capacity, explainability, and model drift monitoring.
@@ -17,23 +16,14 @@ It needs:
 
 This project develops a fraud decision engine that moves from transaction-level prediction to operational decisioning.
 
-```text
-Transaction
-     ↓
-Fraud Detection Model
-     ↓
-Fraud Probability
-     ↓
-Decision Engine
-     ↓
-APPROVE / REVIEW
-     ↓
-Investigator Queue
-     ↓
-SHAP Reason Codes
-     ↓
-PSI Monitoring
-```
+## System Architecture
+
+![Credit Card Fraud Decision Engine Architecture](reports/figures/fraud_decision_engine_architecture.svg)
+
+The system separates statistical prediction from operational decision-making.
+
+The model estimates fraud probability, while the decision engine converts that probability into an investigation decision subject to business constraints.
+
 
 ### 5. SMOTE Comparison
 

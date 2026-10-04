@@ -1,262 +1,233 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="1200" height="1500" viewBox="0 0 1200 1500">
+width="1200" height="1050" viewBox="0 0 1200 1050">
 
-  <defs>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="5" stdDeviation="7"
-                     flood-color="#000000" flood-opacity="0.12"/>
-    </filter>
+<defs>
 
-    <marker id="arrow" markerWidth="12" markerHeight="12"
-            refX="10" refY="6" orient="auto">
-      <path d="M0,0 L12,6 L0,12 Z" fill="#475569"/>
-    </marker>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <feDropShadow dx="0" dy="4" stdDeviation="6"
+      flood-color="#000000" flood-opacity="0.12"/>
+  </filter>
 
-    <linearGradient id="modelGradient" x1="0" x2="1">
-      <stop offset="0%" stop-color="#E0F2FE"/>
-      <stop offset="100%" stop-color="#BAE6FD"/>
-    </linearGradient>
+  <marker id="arrow" markerWidth="12" markerHeight="12"
+    refX="10" refY="6" orient="auto">
+    <path d="M0,0 L12,6 L0,12 Z" fill="#475569"/>
+  </marker>
 
-    <linearGradient id="decisionGradient" x1="0" x2="1">
-      <stop offset="0%" stop-color="#FEF3C7"/>
-      <stop offset="100%" stop-color="#FDE68A"/>
-    </linearGradient>
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      fill: #0F172A;
+    }
 
-    <linearGradient id="investigationGradient" x1="0" x2="1">
-      <stop offset="0%" stop-color="#F3E8FF"/>
-      <stop offset="100%" stop-color="#E9D5FF"/>
-    </linearGradient>
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 18px;
+      fill: #64748B;
+    }
 
-    <linearGradient id="monitoringGradient" x1="0" x2="1">
-      <stop offset="0%" stop-color="#DCFCE7"/>
-      <stop offset="100%" stop-color="#BBF7D0"/>
-    </linearGradient>
+    .heading {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      fill: #0F172A;
+    }
 
-    <style>
-      .title {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-        font-size: 38px;
-        font-weight: 700;
-        fill: #0F172A;
-      }
+    .body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 16px;
+      fill: #475569;
+    }
 
-      .subtitle {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-        font-size: 19px;
-        fill: #64748B;
-      }
+    .decision {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      fill: #0F172A;
+    }
+  </style>
 
-      .box-title {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-        font-size: 25px;
-        font-weight: 700;
-        fill: #0F172A;
-      }
+</defs>
 
-      .box-text {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-        font-size: 17px;
-        fill: #475569;
-      }
+<!-- Background -->
+<rect width="1200" height="1050" fill="#F8FAFC"/>
 
-      .decision {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-        font-size: 22px;
-        font-weight: 700;
-        fill: #0F172A;
-      }
+<!-- Header -->
+<text x="600" y="58" text-anchor="middle" class="title">
+  Credit Card Fraud Decision Engine
+</text>
 
-      .small {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-        font-size: 15px;
-        fill: #64748B;
-      }
+<text x="600" y="88" text-anchor="middle" class="subtitle">
+  Prediction → Decisioning → Investigation → Monitoring
+</text>
 
-      .metric {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-        font-size: 18px;
-        font-weight: 600;
-        fill: #0F172A;
-      }
-    </style>
-  </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="1500" fill="#F8FAFC"/>
+<!-- TRANSACTION -->
 
-  <!-- Header -->
-  <text x="600" y="70" text-anchor="middle" class="title">
-    Credit Card Fraud Decision Engine
-  </text>
+<rect x="300" y="120" width="600" height="95"
+  rx="18" fill="#FFFFFF" stroke="#CBD5E1"
+  stroke-width="2" filter="url(#shadow)"/>
 
-  <text x="600" y="105" text-anchor="middle" class="subtitle">
-    Prediction → Decisioning → Investigation → Monitoring
-  </text>
+<text x="600" y="158" text-anchor="middle" class="heading">
+  Transaction
+</text>
 
-  <!-- Transaction -->
-  <rect x="300" y="145" width="600" height="115" rx="18"
-        fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"
-        filter="url(#shadow)"/>
+<text x="600" y="187" text-anchor="middle" class="body">
+  Amount · Time · Anonymized transaction features
+</text>
 
-  <text x="600" y="190" text-anchor="middle" class="box-title">
-    Transaction
-  </text>
 
-  <text x="600" y="222" text-anchor="middle" class="box-text">
-    Amount · Time · Anonymized transaction features
-  </text>
+<!-- ARROW -->
 
-  <!-- Arrow -->
-  <line x1="600" y1="260" x2="600" y2="310"
-        stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="600" y1="215" x2="600" y2="250"
+  stroke="#475569" stroke-width="3"
+  marker-end="url(#arrow)"/>
 
-  <!-- Model -->
-  <rect x="250" y="315" width="700" height="145" rx="18"
-        fill="url(#modelGradient)" stroke="#0284C7" stroke-width="2"
-        filter="url(#shadow)"/>
 
-  <text x="600" y="360" text-anchor="middle" class="box-title">
-    Fraud Detection Model
-  </text>
+<!-- MODEL -->
 
-  <text x="600" y="394" text-anchor="middle" class="box-text">
-    Class-Weighted XGBoost
-  </text>
+<rect x="250" y="255" width="700" height="120"
+  rx="18" fill="#E0F2FE" stroke="#0284C7"
+  stroke-width="2" filter="url(#shadow)"/>
 
-  <text x="600" y="425" text-anchor="middle" class="box-text">
-    Temporal split · PR-AUC optimization · Extreme class imbalance
-  </text>
+<text x="600" y="295" text-anchor="middle" class="heading">
+  Fraud Detection Model
+</text>
 
-  <!-- Arrow -->
-  <line x1="600" y1="460" x2="600" y2="510"
-        stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="600" y="325" text-anchor="middle" class="body">
+  Class-Weighted XGBoost
+</text>
 
-  <!-- Probability -->
-  <rect x="300" y="515" width="600" height="110" rx="18"
-        fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"
-        filter="url(#shadow)"/>
+<text x="600" y="351" text-anchor="middle" class="body">
+  Temporal validation · PR-AUC · Extreme class imbalance
+</text>
 
-  <text x="600" y="560" text-anchor="middle" class="box-title">
-    Fraud Probability
-  </text>
 
-  <text x="600" y="592" text-anchor="middle" class="box-text">
-    Continuous model risk score P(Fraud)
-  </text>
+<!-- ARROW -->
 
-  <!-- Arrow -->
-  <line x1="600" y1="625" x2="600" y2="675"
-        stroke="#475569" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="600" y1="375" x2="600" y2="410"
+  stroke="#475569" stroke-width="3"
+  marker-end="url(#arrow)"/>
 
-  <!-- Decision Engine -->
-  <rect x="225" y="680" width="750" height="150" rx="18"
-        fill="url(#decisionGradient)" stroke="#D97706" stroke-width="2"
-        filter="url(#shadow)"/>
 
-  <text x="600" y="725" text-anchor="middle" class="box-title">
-    Decision Engine
-  </text>
+<!-- PROBABILITY -->
 
-  <text x="600" y="758" text-anchor="middle" class="box-text">
-    Frozen threshold = 0.56
-  </text>
+<rect x="300" y="415" width="600" height="90"
+  rx="18" fill="#FFFFFF" stroke="#CBD5E1"
+  stroke-width="2" filter="url(#shadow)"/>
 
-  <text x="600" y="790" text-anchor="middle" class="decision">
-    P(Fraud) ≥ 0.56 → REVIEW
-  </text>
+<text x="600" y="452" text-anchor="middle" class="heading">
+  Fraud Probability
+</text>
 
-  <text x="600" y="818" text-anchor="middle" class="small">
-    Investigation capacity constraint: 50 cases
-  </text>
+<text x="600" y="480" text-anchor="middle" class="body">
+  Continuous risk score P(Fraud)
+</text>
 
-  <!-- Split arrows -->
-  <line x1="600" y1="830" x2="600" y2="880"
-        stroke="#475569" stroke-width="3"/>
 
-  <line x1="600" y1="880" x2="350" y2="930"
-        stroke="#475569" stroke-width="3"
-        marker-end="url(#arrow)"/>
+<!-- ARROW -->
 
-  <line x1="600" y1="880" x2="850" y2="930"
-        stroke="#475569" stroke-width="3"
-        marker-end="url(#arrow)"/>
+<line x1="600" y1="505" x2="600" y2="540"
+  stroke="#475569" stroke-width="3"
+  marker-end="url(#arrow)"/>
 
-  <!-- APPROVE -->
-  <rect x="150" y="935" width="400" height="105" rx="18"
-        fill="#FFFFFF" stroke="#94A3B8" stroke-width="2"
-        filter="url(#shadow)"/>
 
-  <text x="350" y="978" text-anchor="middle" class="box-title">
-    APPROVE
-  </text>
+<!-- DECISION ENGINE -->
 
-  <text x="350" y="1010" text-anchor="middle" class="box-text">
-    Lower-risk transaction
-  </text>
+<rect x="225" y="545" width="750" height="120"
+  rx="18" fill="#FEF3C7" stroke="#D97706"
+  stroke-width="2" filter="url(#shadow)"/>
 
-  <!-- REVIEW -->
-  <rect x="650" y="935" width="400" height="105" rx="18"
-        fill="url(#investigationGradient)" stroke="#9333EA"
-        stroke-width="2" filter="url(#shadow)"/>
+<text x="600" y="582" text-anchor="middle" class="heading">
+  Decision Engine
+</text>
 
-  <text x="850" y="978" text-anchor="middle" class="box-title">
-    REVIEW
-  </text>
+<text x="600" y="612" text-anchor="middle" class="body">
+  Frozen threshold = 0.56 · Investigation capacity = 50
+</text>
 
-  <text x="850" y="1010" text-anchor="middle" class="box-text">
-    High-risk transaction
-  </text>
+<text x="600" y="640" text-anchor="middle" class="decision">
+  P(Fraud) ≥ 0.56 → REVIEW
+</text>
 
-  <!-- Review arrow -->
-  <line x1="850" y1="1040" x2="850" y2="1090"
-        stroke="#475569" stroke-width="3"
-        marker-end="url(#arrow)"/>
 
-  <!-- Investigator -->
-  <rect x="625" y="1095" width="450" height="125" rx="18"
-        fill="url(#investigationGradient)" stroke="#9333EA"
-        stroke-width="2" filter="url(#shadow)"/>
+<!-- SPLIT -->
 
-  <text x="850" y="1140" text-anchor="middle" class="box-title">
-    Investigator Queue
-  </text>
+<line x1="600" y1="665" x2="600" y2="700"
+  stroke="#475569" stroke-width="3"/>
 
-  <text x="850" y="1172" text-anchor="middle" class="box-text">
-    Risk band · Priority · Review ranking
-  </text>
+<line x1="600" y1="700" x2="350" y2="735"
+  stroke="#475569" stroke-width="3"
+  marker-end="url(#arrow)"/>
 
-  <text x="850" y="1200" text-anchor="middle" class="small">
-    Example: P1 — URGENT
-  </text>
+<line x1="600" y1="700" x2="850" y2="735"
+  stroke="#475569" stroke-width="3"
+  marker-end="url(#arrow)"/>
 
-  <!-- SHAP -->
-  <line x1="850" y1="1220" x2="850" y2="1270"
-        stroke="#475569" stroke-width="3"
-        marker-end="url(#arrow)"/>
 
-  <rect x="625" y="1275" width="450" height="100" rx="18"
-        fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"
-        filter="url(#shadow)"/>
+<!-- APPROVE -->
 
-  <text x="850" y="1315" text-anchor="middle" class="box-title">
-    SHAP Reason Codes
-  </text>
+<rect x="125" y="740" width="450" height="90"
+  rx="18" fill="#FFFFFF" stroke="#94A3B8"
+  stroke-width="2" filter="url(#shadow)"/>
 
-  <text x="850" y="1347" text-anchor="middle" class="box-text">
-    Model explanation for investigator review
-  </text>
+<text x="350" y="777" text-anchor="middle" class="heading">
+  APPROVE
+</text>
 
-  <!-- Monitoring -->
-  <line x1="850" y1="1375" x2="850" y2="1410"
-        stroke="#475569" stroke-width="3"
-        marker-end="url(#arrow)"/>
+<text x="350" y="805" text-anchor="middle" class="body">
+  Lower-risk transaction
+</text>
 
-  <rect x="350" y="1415" width="500" height="65" rx="16"
-        fill="url(#monitoringGradient)" stroke="#16A34A"
-        stroke-width="2"/>
 
-  <text x="600" y="1455" text-anchor="middle" class="box-title">
-    PSI Monitoring & Out-of-Time Stability
-  </text>
+<!-- REVIEW -->
+
+<rect x="625" y="740" width="450" height="90"
+  rx="18" fill="#F3E8FF" stroke="#9333EA"
+  stroke-width="2" filter="url(#shadow)"/>
+
+<text x="850" y="777" text-anchor="middle" class="heading">
+  REVIEW
+</text>
+
+<text x="850" y="805" text-anchor="middle" class="body">
+  High-risk transaction
+</text>
+
+
+<!-- REVIEW PIPELINE -->
+
+<line x1="850" y1="830" x2="850" y2="860"
+  stroke="#475569" stroke-width="3"
+  marker-end="url(#arrow)"/>
+
+
+<rect x="625" y="865" width="450" height="80"
+  rx="18" fill="#FFFFFF" stroke="#CBD5E1"
+  stroke-width="2" filter="url(#shadow)"/>
+
+<text x="850" y="898" text-anchor="middle" class="heading">
+  Investigator Queue
+</text>
+
+<text x="850" y="925" text-anchor="middle" class="body">
+  Risk band · Priority · Review ranking
+</text>
+
+
+<!-- SHAP + PSI -->
+
+<line x1="850" y1="945" x2="850" y2="975"
+  stroke="#475569" stroke-width="3"
+  marker-end="url(#arrow)"/>
+
+<rect x="375" y="980" width="450" height="55"
+  rx="15" fill="#DCFCE7" stroke="#16A34A"
+  stroke-width="2"/>
+
+<text x="600" y="1015" text-anchor="middle" class="heading">
+  SHAP Explainability · PSI Monitoring
+</text>
 
 </svg>
