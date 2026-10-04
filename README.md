@@ -33,6 +33,7 @@ Investigator Queue
 SHAP Reason Codes
      ↓
 PSI Monitoring
+```
 
 ### 5. SMOTE Comparison
 
