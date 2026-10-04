@@ -1,0 +1,26 @@
+{
+    "selected_model": "Class Weighted XGBoost",
+    "selection_reason": "Class Weighted XGBoost achieved higher or equal validation PR-AUC.",
+    "frozen_threshold": 0.56,
+    "investigation_capacity": 50,
+    "test_was_used_for_selection": false,
+    "validation": {
+        "pr_auc": 0.8618241015474813,
+        "precision": 0.9772727272727273,
+        "recall": 0.7678571428571429,
+        "f1": 0.86,
+        "alerts": 44
+    },
+    "test": {
+        "pr_auc": 0.7684131934213442,
+        "roc_auc": 0.9796664022642462,
+        "precision": 0.8666666666666667,
+        "recall": 0.75,
+        "f1": 0.8041237113402062,
+        "alerts": 45,
+        "true_positives": 39,
+        "false_positives": 6,
+        "false_negatives": 13,
+        "true_negatives": 42664
+    }
+}

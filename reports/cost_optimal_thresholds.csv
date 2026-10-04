@@ -1,0 +1,4 @@
+Scenario,Fraud Cost,Review Cost,Threshold,Total Cost,Alerts,Fraud Captured,Missed Fraud,False Alarms,Precision,Recall
+Conservative,10000,100,0.019,72600,75,49,7,26,0.6533333333333333,0.875
+Base Case,5000,150,0.019,38900,75,49,7,26,0.6533333333333333,0.875
+High Friction,2000,300,0.027,21700,67,48,8,19,0.7164179104477612,0.8571428571428571

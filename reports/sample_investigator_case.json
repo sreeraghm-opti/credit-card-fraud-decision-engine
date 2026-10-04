@@ -1,0 +1,103 @@
+{
+    "transaction_index": 263324,
+    "amount": 127.14,
+    "fraud_probability": 0.999994158744812,
+    "decision": "REVIEW",
+    "risk_band": "CRITICAL",
+    "investigation_priority": "P1 \u2014 URGENT",
+    "reason_codes": "V14 | V10 | V12 | V4 | V3",
+    "top_positive_drivers": [
+        {
+            "Feature": "V14",
+            "Feature_Value": -4.28799577702192,
+            "SHAP_Value": 4.949312686920166,
+            "Absolute_SHAP": 4.949312686920166
+        },
+        {
+            "Feature": "V10",
+            "Feature_Value": -4.5335154033258,
+            "SHAP_Value": 1.618869662284851,
+            "Absolute_SHAP": 1.618869662284851
+        },
+        {
+            "Feature": "V12",
+            "Feature_Value": -5.26720466981905,
+            "SHAP_Value": 1.1487228870391846,
+            "Absolute_SHAP": 1.1487228870391846
+        },
+        {
+            "Feature": "V4",
+            "Feature_Value": 3.04443718621919,
+            "SHAP_Value": 1.086077332496643,
+            "Absolute_SHAP": 1.086077332496643
+        },
+        {
+            "Feature": "V3",
+            "Feature_Value": -6.19907019688041,
+            "SHAP_Value": 0.9926509857177734,
+            "Absolute_SHAP": 0.9926509857177734
+        },
+        {
+            "Feature": "V16",
+            "Feature_Value": -6.46918689069948,
+            "SHAP_Value": 0.8217759132385254,
+            "Absolute_SHAP": 0.8217759132385254
+        },
+        {
+            "Feature": "V17",
+            "Feature_Value": -8.71392005149206,
+            "SHAP_Value": 0.5415104627609253,
+            "Absolute_SHAP": 0.5415104627609253
+        },
+        {
+            "Feature": "V7",
+            "Feature_Value": -3.7349017657824,
+            "SHAP_Value": 0.5160707831382751,
+            "Absolute_SHAP": 0.5160707831382751
+        },
+        {
+            "Feature": "V28",
+            "Feature_Value": -0.171396981067706,
+            "SHAP_Value": 0.2767032980918884,
+            "Absolute_SHAP": 0.2767032980918884
+        },
+        {
+            "Feature": "V11",
+            "Feature_Value": 2.28802174654208,
+            "SHAP_Value": 0.2522400915622711,
+            "Absolute_SHAP": 0.2522400915622711
+        }
+    ],
+    "top_negative_drivers": [
+        {
+            "Feature": "Time",
+            "Feature_Value": 160895.0,
+            "SHAP_Value": -1.2779446840286255,
+            "Absolute_SHAP": 1.2779446840286255
+        },
+        {
+            "Feature": "V8",
+            "Feature_Value": 1.52007897310233,
+            "SHAP_Value": -0.9795441031455994,
+            "Absolute_SHAP": 0.9795441031455994
+        },
+        {
+            "Feature": "V24",
+            "Feature_Value": 0.0352062006310435,
+            "SHAP_Value": -0.4720008671283722,
+            "Absolute_SHAP": 0.4720008671283722
+        },
+        {
+            "Feature": "V15",
+            "Feature_Value": 1.31527946674202,
+            "SHAP_Value": -0.42751544713974,
+            "Absolute_SHAP": 0.42751544713974
+        },
+        {
+            "Feature": "V2",
+            "Feature_Value": 2.71988211593934,
+            "SHAP_Value": -0.30863094329833984,
+            "Absolute_SHAP": 0.30863094329833984
+        }
+    ]
+}

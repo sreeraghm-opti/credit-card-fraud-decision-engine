@@ -1,0 +1,206 @@
+FRAUD INVESTIGATION CASE REPORT
+======================================================================
+Model: Class Weighted XGBoost
+Frozen decision threshold: 0.5600
+Total test transactions: 42,722
+Transactions sent to review: 45
+
+CASE #1
+--------------------------------------------------
+Transaction index: 263324
+Amount: $127.14
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V10 | V12 | V4 | V3
+Actual class: 1
+
+CASE #2
+--------------------------------------------------
+Transaction index: 262559
+Amount: $4.69
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V12 | V3
+Actual class: 1
+
+CASE #3
+--------------------------------------------------
+Transaction index: 247995
+Amount: $51.37
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V10 | V4 | V3 | V12
+Actual class: 1
+
+CASE #4
+--------------------------------------------------
+Transaction index: 243699
+Amount: $1.00
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V12 | V3
+Actual class: 1
+
+CASE #5
+--------------------------------------------------
+Transaction index: 249828
+Amount: $6.74
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V12 | V3
+Actual class: 1
+
+CASE #6
+--------------------------------------------------
+Transaction index: 281144
+Amount: $245.00
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V10 | V12 | V3 | V7
+Actual class: 1
+
+CASE #7
+--------------------------------------------------
+Transaction index: 276864
+Amount: $349.08
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V10 | V12 | V4 | V16
+Actual class: 1
+
+CASE #8
+--------------------------------------------------
+Transaction index: 251477
+Amount: $0.77
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V12 | V3
+Actual class: 1
+
+CASE #9
+--------------------------------------------------
+Transaction index: 250761
+Amount: $0.77
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V12 | V3
+Actual class: 1
+
+CASE #10
+--------------------------------------------------
+Transaction index: 252124
+Amount: $0.77
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V3 | V12
+Actual class: 1
+
+CASE #11
+--------------------------------------------------
+Transaction index: 251866
+Amount: $3.90
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V12 | V3
+Actual class: 1
+
+CASE #12
+--------------------------------------------------
+Transaction index: 243749
+Amount: $1.00
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V12 | V16
+Actual class: 1
+
+CASE #13
+--------------------------------------------------
+Transaction index: 252774
+Amount: $0.77
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V10 | V4 | V12 | V3
+Actual class: 1
+
+CASE #14
+--------------------------------------------------
+Transaction index: 255403
+Amount: $4.97
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V10 | V4 | V12 | V3
+Actual class: 1
+
+CASE #15
+--------------------------------------------------
+Transaction index: 243848
+Amount: $1.00
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V12 | V3
+Actual class: 1
+
+CASE #16
+--------------------------------------------------
+Transaction index: 244003
+Amount: $1.00
+Fraud probability: 1.0000
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V12 | V3
+Actual class: 1
+
+CASE #17
+--------------------------------------------------
+Transaction index: 263272
+Amount: $0.77
+Fraud probability: 0.9999
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V12 | V3
+Actual class: 1
+
+CASE #18
+--------------------------------------------------
+Transaction index: 251904
+Amount: $94.82
+Fraud probability: 0.9999
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V10 | V4 | V12 | V3
+Actual class: 1
+
+CASE #19
+--------------------------------------------------
+Transaction index: 244332
+Amount: $1.00
+Fraud probability: 0.9999
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V12 | V3
+Actual class: 1
+
+CASE #20
+--------------------------------------------------
+Transaction index: 249963
+Amount: $0.77
+Fraud probability: 0.9999
+Risk band: CRITICAL
+Priority: P1 — URGENT
+Reason codes: V14 | V4 | V10 | V3 | V12
+Actual class: 1

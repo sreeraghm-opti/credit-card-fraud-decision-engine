@@ -1,0 +1,30 @@
+{
+    "reference_dataset": "Train",
+    "monitoring_datasets": [
+        "Validation",
+        "Test"
+    ],
+    "feature_count": 30,
+    "validation_feature_psi": {
+        "Stable": 15,
+        "Moderate_Drift": 10,
+        "Significant_Drift": 5
+    },
+    "test_feature_psi": {
+        "Stable": 15,
+        "Moderate_Drift": 9,
+        "Significant_Drift": 6
+    },
+    "score_psi": {
+        "train_vs_validation": 0.0382585196563182,
+        "train_vs_test": 0.08652021787036437
+    },
+    "significant_drift_feature_count": 6,
+    "moderate_drift_feature_count": 9,
+    "overall_status": "INVESTIGATE DRIFT",
+    "psi_thresholds": {
+        "stable": "< 0.10",
+        "moderate": "0.10 to < 0.25",
+        "significant": ">= 0.25"
+    }
+}

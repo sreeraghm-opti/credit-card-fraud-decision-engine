@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Secrets
+.env
+*.pem
+*.key
+
+# Large/raw datasets
+data/*.csv
+data/*.zip
+data/*.parquet
+
+# Temporary files
+tmp/
+temp/
+
+# OS files
+Thumbs.db

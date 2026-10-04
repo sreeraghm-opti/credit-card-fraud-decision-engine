@@ -1,0 +1,9 @@
+{
+    "model": "Class Weighted XGBoost",
+    "threshold": 0.56,
+    "investigation_capacity": 50,
+    "selection_metric": "Validation PR-AUC",
+    "threshold_selection": "Validation F1 subject to investigation capacity",
+    "test_used_for_selection": false,
+    "selection_reason": "Class Weighted XGBoost achieved higher or equal validation PR-AUC."
+}

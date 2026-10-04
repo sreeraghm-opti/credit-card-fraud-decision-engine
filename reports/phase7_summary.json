@@ -1,0 +1,31 @@
+{
+    "model": "XGBoost Class Weighted",
+    "n_estimators": 500,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "scale_pos_weight": 518.1770833333334,
+    "validation": {
+        "raw_pr_auc": 0.8618241015474813,
+        "calibrated_pr_auc": 0.8607217116890684,
+        "raw_roc_auc": 0.9885411260484506,
+        "calibrated_roc_auc": 0.9911047027506656,
+        "raw_brier": 0.0003286951105110347,
+        "calibrated_brier": 0.00029012776212766767
+    },
+    "test": {
+        "raw_pr_auc": 0.7684131934213442,
+        "calibrated_pr_auc": 0.7611451036302599,
+        "raw_roc_auc": 0.9796664022642462,
+        "calibrated_roc_auc": 0.9800364154242758,
+        "raw_brier": 0.00041688239434733987,
+        "calibrated_brier": 0.00041029354906640947
+    },
+    "shap_sample_size": 5000,
+    "highest_risk_transaction": {
+        "row_index": 243393,
+        "calibrated_probability": 1.0,
+        "actual_class": 1
+    }
+}

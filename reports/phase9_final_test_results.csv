@@ -1,0 +1,2 @@
+Final_Model,Frozen_Threshold,Validation_PR_AUC,Test_PR_AUC,Test_ROC_AUC,Test_Precision,Test_Recall,Test_F1,Test_Alerts,Test_TP,Test_FP,Test_FN,Test_TN
+Class Weighted XGBoost,0.56,0.8618241015474813,0.7684131934213442,0.9796664022642462,0.8666666666666667,0.75,0.8041237113402062,45,39,6,13,42664
